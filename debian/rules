@@ -9,7 +9,7 @@
 
 override_dh_auto_configure:
 	export FINAL_INSTALL_DIR=/usr
-	dh_auto_configure -- -DCMAKE_INSTALL_SYSCONFDIR=/etc -DGENERATE_TESTS=TRUE
+	dh_auto_configure -- -DCMAKE_INSTALL_SYSCONFDIR=/etc -DGENERATE_TESTS=TRUE -DCMAKE_BUILD_TYPE=Debug
 
 .PHONY: override_dh_strip
 
